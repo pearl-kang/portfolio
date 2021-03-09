@@ -1,0 +1,24 @@
+/* skip navigation */
+#skip a {position: absolute;top: 0;left: -9999px;z-index: 1000; }
+#skip a:focus {left: 0;background: #eec824;width: 100%;height: 50px;line-height: 50px;text-align: center; }
+
+/* header */
+#header{position: fixed;height: 50px;width: 100%;top: 0;left: 0;z-index: 900;background-color: rgba(117, 117, 117,.3);padding: 0 40px;}
+#header h1{width: 100px;height: 50px;top: 0;left: 0;;text-align: center;line-height: 50px;font-weight: bold;font-size: 35px;}
+#header #gnb{position: absolute;width: 600px;height: 50px;top: 0;right: 120px;}
+#header #gnb #gnbList{display: flex;justify-content: space-between;}
+#header #gnb #gnbList li{text-align: center;line-height: 50px;color: #fff;font-weight: 500;}
+
+/* home */
+#fullpage #cnt1{position: relative;/* margin: 0 auto; */}
+#fullpage #cnt1 .main_rect1{position: absolute;width: 660px;height: 660px;border: 10px solid rgb(253, 253, 253);box-sizing: border-box;left: 50%;margin-left: -350px; top: 50%;top: 50%;margin-top: -340px;}
+#fullpage #cnt1 .main_rect2{position: absolute;width: 660px;height: 660px;border: 10px solid rgb(255, 255, 255);box-sizing: border-box;left: 50%;margin-left: -300px; top: 50%;top: 50%;margin-top: -380px;}
+#fullpage .main_rect2 .main_txt{position: absolute;/* background: rgb(201, 135, 135); */top: 110px;left: 25px;content: "";display: block;clear: both; }
+#fullpage .main_rect2 .main_txt p{font-weight: 500;font-size: 110px;letter-spacing: -6px;color: rgb(255, 255, 255,0.9);font-family: Volkhov; text-shadow: 5px 2px 5px rgba(255, 255, 255, 0.6),-20px 30px 15px rgba(122, 122, 119, 0.5), -5px 5px 5px rgb(213, 235, 245);content: "";display: block;clear: both; }
+#fullpage #cnt1 .mouse{position: absolute;width: 20px;height: 50px;border: 3px solid #fff;border-radius: 50px;bottom: 3vh;left: 50%;}
+
+
+/* about me */
+#fullpage #cnt2 #aboutTxt{width: 1500px;height: 600px;/* background-color: aquamarine; */float: left;border: 1px solid #000;margin: 0 auto;display: block;}
+#cnt2 #aboutTxt .about_img{width: 600px;height: 600px;background: url("../images/aboutme.jpg") no-repeat ;background-size: cover;margin-left: 820px;}
+#cnt2 #aboutTxt .font{width: 800px;height:600px;float: left;border: 1px solid #000;}

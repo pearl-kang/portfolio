@@ -1,0 +1,122 @@
+
+
+.tool-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  svg {
+  max-width: 600px;
+  height: auto;
+  width: 100%;
+  margin-bottom: 100px;
+  
+  .text {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    position: relative;
+  }
+  
+  .tool-illustrator {
+    position: absolute;
+    transform: translate(170px, 110px);
+  }
+  
+  .tool-indesign {
+  position: absolute;
+  transform: translate(180px, 390px);
+  }
+  
+  .tool-sketch {
+  position: absolute;
+  transform: translate(50px, 190px);
+  }
+  
+  .tool-invision {
+  position: absolute;
+  transform: translate(35px, 317px);
+  }
+  
+  .tool-scss {
+    position: absolute;
+    transform: translate(65px, 190px);
+  }
+  
+  .tool-git {
+    position: absolute;
+    transform: translate(53px, 315px);
+  }
+  
+  .tool-vscode {
+    position: absolute;
+    transform: translate(185px, 390px);
+  }
+  
+  .tool-css {
+    position: absolute;
+    transform: translate(198px, 120px);
+  }
+}
+}
+
+
+//design tool
+@keyframes designTool {
+  0% {
+    stroke-dashoffset: 700;
+  }
+    10% {
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dashoffset: 0;
+  }
+  90% {
+    stroke-dashoffset: -700;  
+  }
+  100% {
+    stroke-dashoffset: -700;
+  }
+}
+
+
+.design-tool-line {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: designTool 6s ease-out infinite running;
+}
+
+
+
+//coding tool
+@keyframes codingTool {
+  0% {
+    stroke-dashoffset: 700;
+  }
+    10% {
+    stroke-dashoffset: 0;
+  }
+  70% {
+    stroke-dashoffset: 0;
+  }
+  90% {
+    stroke-dashoffset: -700;  
+  }
+  100% {
+    stroke-dashoffset: -700;
+  }
+}
+
+
+.coding-tool-line {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: codingTool 6s ease-out infinite running;
+}
+
+
+
+
+
+
