@@ -1,3 +1,12 @@
+@charset "UTF-8";
+@font-face {
+  font-family: ridi;
+  src: url("../fonts/RIDIBatang.eot");
+  src: url("../fonts/RIDIBatang.eot#iefix") format("embeded-opentype"),
+  url("../fonts/RIDIBatang.woff") format("woff"),
+  url("../fonts/RIDIBatang.otf") format("opentype");
+}
+
 /* skip navigation */
 #skip a {position: absolute;top: 0;left: -9999px;z-index: 1000; }
 #skip a:focus {left: 0;background: #eec824;width: 100%;height: 50px;line-height: 50px;text-align: center; }
@@ -19,6 +28,13 @@
 
 
 /* about me */
-#fullpage #cnt2 #aboutTxt{width: 1500px;height: 600px;/* background-color: aquamarine; */float: left;border: 1px solid #000;margin: 0 auto;display: block;}
-#cnt2 #aboutTxt .about_img{width: 600px;height: 600px;background: url("../images/aboutme.jpg") no-repeat ;background-size: cover;margin-left: 820px;}
-#cnt2 #aboutTxt .font{width: 800px;height:600px;float: left;border: 1px solid #000;}
+#fullpage #cnt2 #aboutTxt{width: 1500px;height: 600px;margin: 0 auto;display: block;}
+#cnt2 #aboutTxt .about_img{width: 600px;height: 600px;background: url("../images/aboutme.png") no-repeat ;background-size: cover;float: right;background: #eec824;}
+#cnt2 #aboutTxt .font{width: 900px;height:600px;float: left;}
+#cnt2 #aboutTxt .font ul > li{width:400px;height: 300px;float: left;font-size: 42px;color: #212d60;font-family: '굴림';margin-bottom:50px;margin-right: 50px;}
+#cnt2 #aboutTxt .font ul > li strong{margin-bottom: 20px;width: 400px;height: 50px;display: block;}
+#cnt2 #aboutTxt .font ul > li:not(.edu_txt) p{font-size: 20px;display: block;margin-bottom: 15px;font-weight: bold;font-family: ridi;height: 25px;}
+#cnt2 #aboutTxt .font ul > li p span{position: relative;display: inline-block;}
+#cnt2 #aboutTxt .font ul > li p img{position: absolute;display: inline-block;width: calc(100% + 30px);height: 100%;left: -10px;bottom: -18px;z-index: 8;}
+#cnt2 #aboutTxt .font ul > .edu_txt .date{position: absolute ;font-size: 16px;font-family: ridi;display: inline-block;right: 0;z-index: 12;margin-top: 8px;}
+#cnt2 #aboutTxt .font ul > .edu_txt p{font-size: 20px;display: block;margin-bottom: 5px;font-weight: bold;font-family: ridi;height: 25px;}
