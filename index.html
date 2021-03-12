@@ -22,9 +22,13 @@
       $('#fullpage').fullpage({
         anchors: ['HOME', 'ABOUTME', 'PUBLISING', 'WEBACCESSIBILITY', 'DESIGN'],
         menu: '#gnbList',
-        sectionsColor : ['transparent', 'transparent','green','red','pink'],
+        sectionsColor: ['transparent', 'transparent', 'green', 'red', 'pink'],
       });
 
+      window.addEventListener('load', function () {
+        var size = document.querySelector('.shape').getTotalLength();
+        console.log(size);
+      });
     });
   </script>
 </head>
@@ -52,7 +56,10 @@
       <section class="section" id="cnt1">
         <div class="main_rect1">
           <div class="main_rect2">
-            <div class="main_txt fade-in-box"><p>WEB<br>PUBLISING<br>PORTFOLIO</p></div>
+            <div class="main_txt fade-in-box ">
+              <!--  -->
+              <p class="haunted-text">WEB<br>PUBLISING<br>PORTFOLIO</p>
+            </div>
           </div>
         </div>
         <div class="mouse">
@@ -65,26 +72,40 @@
           <li class="font">
             <ul>
               <li><strong>PROFILE</strong>
-                <p><span>안녕하세요<img src="images/border_blue_shot.png" alt=""></span></p>               
-                <p><span>신입 웹 퍼블리셔 강진주입니다<img src="images/border_blue.png" alt=""></span></p>               
-                <p><span>웹페이지를 사용하는 다양한 사용자들이<img src="images/border_blue.png" alt=""></span></p>               
-                <p><span>친절하다고 느낄 수 있도록 노력합니다<img src="images/border_blue.png" alt=""></span></p>               
+                <p><span>안녕하세요<img src="images/border_blue_shot.png" alt=""></span></p>
+                <p><span>신입 웹 퍼블리셔 강진주입니다<img src="images/border_blue.png" alt=""></span></p>
+                <p><span>웹페이지를 사용하는 다양한 사용자들이<img src="images/border_blue.png" alt=""></span></p>
+                <p><span>친절하다고 느낄 수 있도록 노력합니다<img src="images/border_blue.png" alt=""></span></p>
               </li>
               <li class="edu_txt p_r"><strong>EDUCATION</strong>
                 <p class="edu_font">
-                  <span>UI/UX 교육 수료(하이미디어학원) 
+                  <span>UI/UX 교육 수료(하이미디어학원)
                     <img src="images/border_yl.png" alt="">
                   </span>
                   <p class="date">2020.10~2021.03</p>
                 </p>
-                <p class="edu_font"><span>웹디자인기능사 필기 <img src="images/border_yl.png" alt=""></span>    
-                  <p class="date">2021.01</p>         
+                <p class="edu_font"><span>웹디자인기능사 필기 <img src="images/border_yl.png" alt=""></span>
+                  <p class="date">2021.01</p>
                 </p>
-                <p class="edu_font"><span>GTQ 포토샵 1급 <img src="images/border_yl.png" alt=""></span> 
-                  <p class="date">2020.11</p> 
+                <p class="edu_font"><span>GTQ 포토샵 1급 <img src="images/border_yl.png" alt=""></span>
+                  <p class="date">2020.11</p>
                 </p>
               </li>
               <li><strong>SKILL</strong>
+                <div class="skill1">
+                  <svg version="1.1" id="skill" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+                    viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                    <polygon class="shape" fill="none" stroke="#000000" stroke-miterlimit="10" points="83.697,35.421 219.224,35.421 286,151.935 218.895,268.645 
+                                 83.697,268.645 15.934,151.935 " />
+                  </svg>
+                  <svg version="1.1" id="skill_lv" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px"
+                    viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                    <polygon class="shape" fill="none" stroke="#000000" stroke-miterlimit="10" points="85.671,38.052 208.697,53.842 217.908,152.033 
+                    204.421,245.289 113.96,215.355 66.921,145.947 " />
+                  </svg>
+                </div>
                 <!-- <canvas id="radar-chart" width="800" height="600"></canvas>       -->
               </li>
               <li><strong>LIKE</strong>
