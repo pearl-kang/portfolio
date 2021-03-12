@@ -44,6 +44,25 @@
 #cnt2 #aboutTxt .font ul li #skill .shape{fill: none;stroke:#fff; stroke-width:17; /* stroke-miterlimit:10; */animation: lineAnimation1 1s linear forwards;stroke-dasharray: 827;}/*  */
 #cnt2 #aboutTxt .font ul li #skill_lv{position: absolute;top: 0;left: 0;}
 #cnt2 #aboutTxt .font ul li #skill_lv .shape{fill: none; stroke: #eec824;stroke-width: 10;animation: lineAnimation2 2s linear /* 지연시간 */ forwards;stroke-dasharray: 827;}
+/* Animation */
+#cnt2 #aboutTxt .font ul > li .anim-typewriter{
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 1s steps(5) 1s 1 normal both,
+             blinkTextCursor 100ms steps(5) infinite normal;
+             border-right: 2px #212d60;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #212d60 /* rgba(255,255,255,0) */;}
+  to{border-right-color: transparent;}
+}
+/* svg animation */
 @keyframes lineAnimation1 {
   0%{stroke-dashoffset: 827;}
   100%{stroke-dashoffset: 0;}
@@ -53,3 +72,27 @@
   50%{stroke-dashoffset: 827;}
   100%{stroke-dashoffset: 0;}
 }
+
+/* Design */
+#cnt5{position: relative;}
+#cnt5 .menual{position: absolute;top: 13vh;left: 50%;transform: translateX(-50%);display: block;background: yellow;width: 600px;text-align: center;}
+#cnt5 .grid{/* position: relative; */width: 90vw;height: 60vh;background-color: aqua;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+#cnt5 .grid ul{position: absolute;display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(3,1fr);grid-gap:10px;width: 100%;height: 100%;}
+/* #cnt5 .page ul li{width: 27vw;height:30vh;} */
+#cnt5 .page ul li a .bg img{width: 100%;height: 100%;}
+#cnt5 .grid ul li:nth-child(1){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-row: 1/3;}
+#cnt5 .grid ul li:nth-child(2){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-row: 1/3;}
+#cnt5 .grid ul li:nth-child(3){background-image: url("../images/red.jpg");background: no-repeat cover ;}
+#cnt5 .grid ul li:nth-child(4){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-column: 1/3;}
+#cnt5 .grid ul li:nth-child(5){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-row: 2/4;}
+
+
+/* #cnt5 .page{position: relative;width: 90vw;height: 60vh;background-color: aqua;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+#cnt5 .page ul li {position: absolute;top: 0;left: 0;}
+#cnt5 .page ul li a{display: block;}
+#cnt5 .page ul li a p{position: absolute;top: 0;left: 0;width: 100%;display: flex;justify-content: center;align-items: center; height: 100%;color: #212d60;font-weight: bold;font-size: 24px;opacity: 0;}
+#cnt5 .page ul li a .bg img{width: 27vw;background-color: antiquewhite;height:30vh;}
+#cnt5 .page ul li a .bg::before{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);opacity: 0;}
+#cnt5 .page ul li a:hover .bg::before, #cnt5 .page ul li a:hover p,#cnt5 .page ul li a:focus .bg::before, #cnt5 .page ul li a:focus p{opacity: 1;}
+#cnt5 .page ul li a .bg::before,#cnt5 .page ul li a p{transition: all 0.5s;}  */
+
