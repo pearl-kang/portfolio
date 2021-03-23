@@ -1,8 +1,9 @@
-.fade-in-box{display: inline-block;animation: fadein 5s;
-  -moz-animation: fadein 5s; /* Firefox */
-  -webkit-animation: fadein 5s; /* Safari and Chrome */
-  -o-animation: fadein 5s; /* Opera */
-  animation-fill-mode: forwards;}
+.fade-in-box{display: inline-block;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+    animation-fill-mode: forwards;}
 
 @keyframes fadein {
     from {

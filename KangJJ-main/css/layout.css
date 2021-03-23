@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@font-face {
+  font-family: ridi;
+  src: url("../fonts/RIDIBatang.eot");
+  src: url("../fonts/RIDIBatang.eot#iefix") format("embeded-opentype"),
+  url("../fonts/RIDIBatang.woff") format("woff"),
+  url("../fonts/RIDIBatang.otf") format("opentype");
+}
+
+/* skip navigation */
+#skip a {position: absolute;top: 0;left: -9999px;z-index: 1000; }
+#skip a:focus {left: 0;background: #eec824;width: 100%;height: 50px;line-height: 50px;text-align: center; }
+
+/* header */
+#header{position: fixed;height: 50px;width: 100%;top: 0;left: 0;z-index: 900;background-color: rgba(117, 117, 117,.3);padding: 0 40px;}
+#header h1{width: 100px;height: 50px;top: 0;left: 0;;text-align: center;line-height: 50px;font-weight: bold;font-size: 35px;}
+#header #gnb{position: absolute;width: 600px;height: 50px;top: 0;right: 120px;}
+#header #gnb #gnbList{display: flex;justify-content: space-between;}
+#header #gnb #gnbList li{text-align: center;line-height: 50px;color: #fff;font-weight: 500;}
+
+/* home */
+#cnt1{position: relative;/* margin: 0 auto; */}
+#cnt1 .main_rect1{position: absolute;width: 660px;height: 660px;border: 10px solid rgb(253, 253, 253);box-sizing: border-box;left: 50%;margin-left: -350px; top: 50%;top: 50%;margin-top: -340px;}
+#cnt1 .main_rect2{position: absolute;width: 660px;height: 660px;border: 10px solid rgb(255, 255, 255);box-sizing: border-box;left: 50%;margin-left: -300px; top: 50%;top: 50%;margin-top: -380px;}
+#cnt1 .main_rect2 .main_txt{position: absolute;/* background: rgb(201, 135, 135); */top: 110px;left: 25px;content: "";display: block;clear: both; }
+#cnt1 .main_rect2 .main_txt div{font-weight: 500;font-size: 110px;letter-spacing: -6px;color: rgb(255, 255, 255,0.9);font-family: Volkhov; text-shadow: 5px 2px 5px rgba(255, 255, 255, 0.6),-20px 30px 15px rgba(122, 122, 119, 0.5), -5px 5px 5px rgb(213, 235, 245);/* content: "";display: block;clear: both; 이런것 왜해요?? */ }
+#cnt1 .main_rect2 .main_txt div span{opacity: 0;}
+#cnt1 .mouse{position: absolute;width: 20px;height: 50px;border: 3px solid #fff;border-radius: 50px;bottom: 3vh;left: 50%;}
+
+
+/* about me */
+#cnt2 #aboutTxt{width: 1500px;height: 600px;margin: 0 auto;display: block;}
+#cnt2 #aboutTxt .about_img{width: 600px;height: 600px;background: url("../images/aboutme.png") no-repeat ;background-size: cover;float: right;/* background: #eec824; */}
+#cnt2 #aboutTxt .font{width: 900px;height:600px;float: left;}
+#cnt2 #aboutTxt .font ul > li{width:400px;height: 300px;float: left;font-size: 42px;color: #212d60;font-family: '굴림';margin-bottom:50px;margin-right: 50px;}
+#cnt2 #aboutTxt .font ul > li strong{margin-bottom: 20px;width: 400px;height: 50px;display: block;}
+#cnt2 #aboutTxt .font ul > li:not(.edu_txt) p{font-size: 20px;display: block;margin-bottom: 15px;font-weight: bold;font-family: ridi;height: 25px;}
+#cnt2 #aboutTxt .font ul > li p span{position: relative;display: inline-block;}
+#cnt2 #aboutTxt .font ul > li p img{position: absolute;display: inline-block;width: calc(100% + 30px);height: 100%;left: -10px;bottom: -18px;z-index: 8;}
+#cnt2 #aboutTxt .font ul > .edu_txt .date{position: absolute ;font-size: 16px;font-family: ridi;display: inline-block;right: 0;z-index: 12;margin-top: 8px;}
+#cnt2 #aboutTxt .font ul > .edu_txt p{font-size: 20px;display: block;margin-bottom: 5px;font-weight: bold;font-family: ridi;height: 25px;}
+/* about me  svg*/
+#cnt2 #aboutTxt .font ul li .skill1{width: 300px;height: 300px;position: relative;}
+#cnt2 #aboutTxt .font ul li #skill{width: 300px;height: 300px;/* margin-left: 50px; */}
+#cnt2 #aboutTxt .font ul li #skill .shape{fill: none;stroke:#fff; stroke-width:17; /* stroke-miterlimit:10; */animation: lineAnimation1 1s linear forwards;stroke-dasharray: 827;}/*  */
+#cnt2 #aboutTxt .font ul li #skill_lv{position: absolute;top: 0;left: 0;}
+#cnt2 #aboutTxt .font ul li #skill_lv .shape{fill: none; stroke: #eec824;stroke-width: 10;animation: lineAnimation2 2s linear /* 지연시간 */ forwards;stroke-dasharray: 827;}
+/* Animation */
+#cnt2 #aboutTxt .font ul > li .anim-typewriter{
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 1s steps(5) 1s 1 normal both,
+             blinkTextCursor 100ms steps(5) infinite normal;
+             border-right: 2px #212d60;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: #212d60 /* rgba(255,255,255,0) */;}
+  to{border-right-color: transparent;}
+}
+/* svg animation */
+@keyframes lineAnimation1 {
+  0%{stroke-dashoffset: 827;}
+  100%{stroke-dashoffset: 0;}
+}
+@keyframes lineAnimation2 {
+  0%{stroke-dashoffset: 827;}
+  50%{stroke-dashoffset: 827;}
+  100%{stroke-dashoffset: 0;}
+}
+
+/* Design */
+#cnt5{position: relative;}
+#cnt5 .menual{position: absolute;top: 13vh;left: 50%;transform: translateX(-50%);display: block;background: yellow;width: 600px;text-align: center;}
+#cnt5 .grid{/* position: relative; */width: 90vw;height: 60vh;background-color: aqua;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+#cnt5 .grid ul{position: absolute;display: grid;grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(3,1fr);grid-gap:10px;width: 100%;height: 100%;}
+/* #cnt5 .page ul li{width: 27vw;height:30vh;} */
+#cnt5 .page ul li a .bg img{width: 100%;height: 100%;}
+#cnt5 .grid ul li:nth-child(1){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-row: 1/3;}
+#cnt5 .grid ul li:nth-child(2){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-row: 1/3;}
+#cnt5 .grid ul li:nth-child(3){background-image: url("../images/red.jpg");background: no-repeat cover ;}
+#cnt5 .grid ul li:nth-child(4){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-column: 1/3;}
+#cnt5 .grid ul li:nth-child(5){background-image: url("../images/red.jpg");background: no-repeat cover ;grid-row: 2/4;}
+
+
+/* #cnt5 .page{position: relative;width: 90vw;height: 60vh;background-color: aqua;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+#cnt5 .page ul li {position: absolute;top: 0;left: 0;}
+#cnt5 .page ul li a{display: block;}
+#cnt5 .page ul li a p{position: absolute;top: 0;left: 0;width: 100%;display: flex;justify-content: center;align-items: center; height: 100%;color: #212d60;font-weight: bold;font-size: 24px;opacity: 0;}
+#cnt5 .page ul li a .bg img{width: 27vw;background-color: antiquewhite;height:30vh;}
+#cnt5 .page ul li a .bg::before{content: "";position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);opacity: 0;}
+#cnt5 .page ul li a:hover .bg::before, #cnt5 .page ul li a:hover p,#cnt5 .page ul li a:focus .bg::before, #cnt5 .page ul li a:focus p{opacity: 1;}
+#cnt5 .page ul li a .bg::before,#cnt5 .page ul li a p{transition: all 0.5s;}  */
+
